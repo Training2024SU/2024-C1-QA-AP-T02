@@ -1,5 +1,6 @@
 package co.com.sofka.util;
 
+import co.com.sofka.model.PostModel;
 import co.com.sofka.model.UserGetModel;
 import co.com.sofka.model.UserPostModel;
 
@@ -8,7 +9,7 @@ import java.util.Map;
 
 
 public class SetModelData {
-    public static UserGetModel setUserGetModelData(List<Map<String, String>> userModelData) {
+    public static UserGetModel mapUserGetModelData(List<Map<String, String>> userModelData) {
         UserGetModel userGetModel = new UserGetModel();
         userModelData.forEach(model -> {
             userGetModel.setId(model.get("id"));
@@ -19,12 +20,22 @@ public class SetModelData {
         return userGetModel;
     }
 
-    public static UserPostModel setUserPostModelData(List<Map<String, String>> userModelData) {
+    public static UserPostModel mapUserPostModelData(List<Map<String, String>> userModelData) {
         UserPostModel userPostModel = new UserPostModel();
         userModelData.forEach(model -> {
             userPostModel.setName(model.get("name"));
             userPostModel.setJob(model.get("job"));
         });
         return userPostModel;
+    }
+    public static PostModel mapPostModelData(List<Map<String, String>> postModelData) {
+        PostModel postModel = new PostModel();
+        postModelData.forEach(model -> {
+            postModel.setId(model.get("id"));
+            postModel.setBody(model.get("body"));
+            postModel.setTitle(model.get("title"));
+            postModel.setUserId(model.get("userId"));
+        });
+        return postModel;
     }
 }

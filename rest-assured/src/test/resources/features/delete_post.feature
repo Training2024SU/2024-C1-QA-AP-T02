@@ -7,11 +7,11 @@ Feature: Delete Post on jsonplaceholder.typicode.com platform
   Background:
     Given the user is registered on the jsonplaceholder platform
 
-  Scenario Outline: Delete Post Successfully
+  Scenario Outline: Delete Post Successfully using DELETE
     When the user deletes its post with id <id> successfully
     Then the response should have a valid status code of 200
     Examples:
-    |id|
-    | 1 |
-    | 2 |
-    | 3 |
+      | id |
+      | 1  |
+      | 2  |
+      | 3  |

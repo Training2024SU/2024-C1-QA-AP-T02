@@ -7,7 +7,7 @@ Feature: Account Creation on reqres.in Platform
   Background:
     Given the user is currently on the reqres.in platform.
 
-  Scenario Outline: Successful Account Creation
+  Scenario Outline: Successful Account Creation using POST
     When the user correctly enters their details
       | name   | job   |
       | <name> | <job> |

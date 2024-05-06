@@ -7,7 +7,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 
 import java.util.List;
 import java.util.Map;
@@ -36,7 +35,7 @@ public class SearchStepDefinition extends Setup {
     public void theyShouldBeAbleToViewTheirInformation(DataTable dataTable) {
         List<Map<String, String>> userData = dataTable.asMaps(String.class, String.class);
         System.out.println(userData);
-        UserGetModel expectedUser = SetModelData.setUserGetModelData(userData);
+        UserGetModel expectedUser = SetModelData.mapUserGetModelData(userData);
         response.then().assertThat().body("data.id", equalTo(Integer.parseInt(expectedUser.getId())));
         response.then().assertThat().body("data.email", equalTo(expectedUser.getEmail()));
         response.then().assertThat().body("data.first_name", equalTo(expectedUser.getFirstName()));

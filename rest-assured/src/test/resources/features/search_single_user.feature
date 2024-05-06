@@ -7,7 +7,7 @@ Feature: Search User Information on reqres.in Platform
   Background:
     Given the user is registered on the reqres.in platform
 
-  Scenario Outline: Successfully Search for User Information
+  Scenario Outline: Successfully Search for User Information using GET
     When the user enters their registered ID <id> in the database
     Then they should be able to view their information
       | id   | email   | firstName   | lastName   |
