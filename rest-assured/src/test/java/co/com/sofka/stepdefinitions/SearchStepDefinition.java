@@ -15,8 +15,8 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class SearchStepDefinition {
-    private Response response;
+public class SearchStepDefinition extends Setup {
+
 
     @Given("the user is registered on the reqres.in platform")
     public void theUserIsRegisteredOnTheReqresInPlatform() {

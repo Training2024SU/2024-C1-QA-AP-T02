@@ -16,9 +16,7 @@ import java.util.Map;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
-public class CreateUserStepDefinition {
-    private Response response;
-    private RequestSpecification request;
+public class CreateUserStepDefinition extends Setup {
     private UserPostModel userPostModel;
 
     @Given("the user is currently on the reqres.in platform.")
@@ -49,9 +47,4 @@ public class CreateUserStepDefinition {
         response.then().assertThat().body("job", equalTo(userPostModel.getJob()));
     }
 
-
-    @Then("the response should indicate a valid status code of {int}")
-    public void theResponseShouldIndicateAValidStatusCodeOf(Integer expectedStatusCode) {
-        response.then().assertThat().statusCode(expectedStatusCode);
-    }
 }

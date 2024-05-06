@@ -12,7 +12,7 @@ Feature: Account Creation on reqres.in Platform
       | name   | job   |
       | <name> | <job> |
     Then they should be able to view their information along with a generated ID
-    And the response should indicate a valid status code of 201
+    And the response should have a valid status code of 201
     Examples:
       | name            | job   |
       | johan@gmail.com | johan |
