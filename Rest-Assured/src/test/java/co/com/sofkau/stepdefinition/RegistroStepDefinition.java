@@ -1,5 +1,6 @@
 package co.com.sofkau.stepdefinition;
 
+import co.com.sofkau.setup.SetupReqrest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -8,7 +9,7 @@ import org.apache.http.HttpStatus;
 import static org.hamcrest.Matchers.notNullValue;
 
 
-public class RegistroStepDefinition{
+public class RegistroStepDefinition extends SetupReqrest {
 
     @Given("que el usuario ingresa sus datos correctamente")
     public void elUsuarioIngresaSuEmailYPaswordCorrectamente() {

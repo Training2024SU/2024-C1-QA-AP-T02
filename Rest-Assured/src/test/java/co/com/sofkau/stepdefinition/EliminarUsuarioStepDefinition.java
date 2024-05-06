@@ -1,5 +1,6 @@
 package co.com.sofkau.stepdefinition;
 
+import co.com.sofkau.setup.SetupJsonPlaceholder;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -7,7 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 
-public class EliminarUsuarioStepDefinition {
+public class EliminarUsuarioStepDefinition extends SetupJsonPlaceholder {
 
     private String userId;
     private Response response;

@@ -13,12 +13,15 @@ import static org.hamcrest.Matchers.notNullValue;
 
 public class ListarUsuarioStepDefinition extends SetupReqrest {
     private Response response;
+    private String userId;
 
-    @When("se llama el servicio listar un solo usuario por su id")
-    public void seLlamaElServicioListarUnSoloUsuario() {
-        response = RestAssured.given().get("https://reqres.in/api/users/2");
-        RestAssured.given().log().all();
-        RestAssured.given().contentType(ContentType.JSON);
+    @When("se llama el servicio listar un solo usuario por su id {int}")
+    public void seLlamaElServicioListarUnSoloUsuario(int userId) {
+        this.userId = String.valueOf(userId);
+        response = RestAssured.given()
+                .log().all()
+                .contentType(ContentType.JSON)
+                .get("https://reqres.in/api/users/" + userId);
     }
 
     @Then("el servicio deberia responder con un codigo de estado HTTP 200 OK")

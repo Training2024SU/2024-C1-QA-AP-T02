@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/feature/reqres.feature",
+        features = "src/test/resources/feature/registro.feature",
         glue = "co.com.sofkau.stepdefinition",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         tags = "@registroexitoso"

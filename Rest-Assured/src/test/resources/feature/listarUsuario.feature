@@ -5,6 +5,6 @@ Feature: Listar un usuario por su id en Reqrest
 
   @testcorrecto
   Scenario: Listar informacion de un usuario existente correctamente
-    When se llama el servicio listar un solo usuario por su id
+    When se llama el servicio listar un solo usuario por su id 2
     Then el servicio deberia responder con un codigo de estado HTTP 200 OK
     And se deberia visualizar los detalles del usuario correctamente
