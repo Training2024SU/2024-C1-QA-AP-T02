@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.davidbonelo'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation platform("io.cucumber:cucumber-bom:7.17.0")
+
+    testImplementation "org.junit.platform:junit-platform-suite"
+    testImplementation "io.cucumber:cucumber-junit-platform-engine"
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'io.cucumber:cucumber-java:7.17.0'
+
+    implementation 'net.datafaker:datafaker:2.2.2'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty("cucumber.junit-platform.naming-strategy", "long")
+}
