@@ -5,9 +5,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import static org.junit.Assert.assertEquals;
-import static org.hamcrest.Matchers.*;
+
 
 public class RetrieveStepdefinitions {
 
@@ -31,13 +34,18 @@ public class RetrieveStepdefinitions {
     }
 
     @Then("the response should contain the expected user information")
-    public void theResponseShouldContainTheExpectedUserInformation() {
-        // Verificar la información del usuario en la respuesta
-        response.then()
-                .body("data.id", equalTo(2))
-                .body("data.email", equalTo("janet.weaver@reqres.in"))
-                .body("data.first_name", equalTo("Janet"))
-                .body("data.last_name", equalTo("Weaver"))
-                .body("data.avatar", equalTo("https://reqres.in/img/faces/2-image.jpg"));
+    public void theResponseShouldContainTheExpectedUserInformation() throws ParseException {
+        String responseBody = response.getBody().asString();
+
+        JSONParser parser = new JSONParser();
+        JSONObject jsonResponse = (JSONObject) parser.parse(responseBody);
+
+        JSONObject userData = (JSONObject) jsonResponse.get("data");
+
+        assertEquals(2L, userData.get("id")); // Verificar el ID del usuario
+        assertEquals("janet.weaver@reqres.in", userData.get("email")); // Verificar el email
+        assertEquals("Janet", userData.get("first_name")); // Verificar el primer nombre
+        assertEquals("Weaver", userData.get("last_name")); // Verificar el apellido
+        assertEquals("https://reqres.in/img/faces/2-image.jpg", userData.get("avatar")); // Verificar el avatar
     }
 }
