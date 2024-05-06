@@ -18,18 +18,18 @@ public class RetrieveStepdefinitions {
 
     @Given("the user service is online")
     public void theUserServiceIsOnline() {
-        // No es necesario implementar nada aqui
+        // Implementation not needed
     }
 
     @When("a GET request is made to {string}")
     public void aGETRequestIsMadeTo(String endpoint) {
-        // Realizar la solicitud GET al endpoint proporcionado
+        // Make the get request using the endpoint obtained
         response = RestAssured.get(endpoint);
     }
 
     @Then("the response should have status code {int}")
     public void theResponseShouldHaveStatusCode(int expectedStatusCode) {
-        // Verificar el código de estado de la respuesta
+        // Verify the state code of the response
         assertEquals(expectedStatusCode, response.getStatusCode());
     }
 
@@ -42,10 +42,10 @@ public class RetrieveStepdefinitions {
 
         JSONObject userData = (JSONObject) jsonResponse.get("data");
 
-        assertEquals(2L, userData.get("id")); // Verificar el ID del usuario
-        assertEquals("janet.weaver@reqres.in", userData.get("email")); // Verificar el email
-        assertEquals("Janet", userData.get("first_name")); // Verificar el primer nombre
-        assertEquals("Weaver", userData.get("last_name")); // Verificar el apellido
-        assertEquals("https://reqres.in/img/faces/2-image.jpg", userData.get("avatar")); // Verificar el avatar
+        assertEquals(2L, userData.get("id"));
+        assertEquals("janet.weaver@reqres.in", userData.get("email"));
+        assertEquals("Janet", userData.get("first_name"));
+        assertEquals("Weaver", userData.get("last_name"));
+        assertEquals("https://reqres.in/img/faces/2-image.jpg", userData.get("avatar"));
     }
 }
