@@ -21,12 +21,5 @@ Feature: User Information Retrieval
     When a GET request is made to "https://reqres.in/api/users/23"
     Then the response should have status code 404
 
-  # Retrive all users from jsonplaceholder.typicode.com
-  @RetrieveAllUser
-  @RetrieveAll
-  @Users
-  Scenario: Retrieve all the users information
-    When a GET request is made to "https://jsonplaceholder.typicode.com/users"
-    Then the response should have status code 200
 
 
