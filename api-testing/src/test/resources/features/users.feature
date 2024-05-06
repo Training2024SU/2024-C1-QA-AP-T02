@@ -1,3 +1,4 @@
+@Users
 Feature: Users
 
   Scenario: Obtain user profile info
