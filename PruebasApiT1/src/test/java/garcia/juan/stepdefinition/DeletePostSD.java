@@ -28,4 +28,13 @@ public class DeletePostSD extends SetUp{
         response.then().statusCode(int1);
     }
 
+    @Given("there exists no post with id {int}")
+    public void thereExistsNoPostWithId(Integer int1) {
+
+    }
+    @Then("the response delete status code must be {int} indicating resource not found")
+    public void theResponseDeleteStatusCodeMustBeIndicatingResourceNotFound(Integer int1) {
+        response.then().statusCode(int1);
+    }
+
 }

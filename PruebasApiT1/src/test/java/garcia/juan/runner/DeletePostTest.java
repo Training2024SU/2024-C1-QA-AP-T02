@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src\\test\\resources\\features\\deletePostJson.feature",
         glue = "garcia.juan.stepdefinition",
-        snippets = CucumberOptions.SnippetType.CAMELCASE//,
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        tags = "@NoValidID"
 
 )
 public class DeletePostTest {
