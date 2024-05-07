@@ -43,7 +43,6 @@ public class UserGetRequest {
     }
 
     public String responseToString(){
-        System.out.println(response.asString());
         return response.asString();
     }
 

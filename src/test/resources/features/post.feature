@@ -11,5 +11,5 @@ Feature: Agrear un nuevo post
     @testpost
   Scenario: Agregar un nuevo post exitosamente
     When se hace una solicitud Post para agregar un nuevo post
-    Then el código de respuesta de estado debería ser 20
+    Then el código de respuesta de estado debería ser 201
     And la respuesta debería incluir y validar la información del post creado

@@ -56,4 +56,15 @@ public class Color {
     public void setPantoneValue(String pantoneValue) {
         this.pantoneValue = pantoneValue;
     }
+
+    @Override
+    public String toString() {
+        return "Color{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", year=" + year +
+                ", color='" + color + '\'' +
+                ", pantoneValue='" + pantoneValue + '\'' +
+                '}';
+    }
 }

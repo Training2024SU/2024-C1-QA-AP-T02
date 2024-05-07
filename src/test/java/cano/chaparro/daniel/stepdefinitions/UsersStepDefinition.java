@@ -41,6 +41,10 @@ public class UsersStepDefinition {
     @Then("la respuesta debería incluir la información del usuario con ID {int}")
     public void laRespuestaDeberíaIncluirLaInformaciónDelUsuarioConID(Integer userId) {
         try{
+            // Valida empty
+            System.out.println("Se valida que el body no este vacio");
+            Assertions.assertFalse(userGetRequest.responseToString().isEmpty());
+
             // JSONObject de la libreria json.simple con la informacion del usuario
             JSONObject userObject = Util.jsonToObject(userGetRequest.responseToString());
 
@@ -59,6 +63,8 @@ public class UsersStepDefinition {
             Assertions.assertNotNull(user.getEmail(), "El campo 'email' no debería ser nulo");
             Assertions.assertNotNull(user.getPhone(), "El campo 'phone' no debería ser nulo");
             Assertions.assertNotNull(user.getWebsite(), "El campo 'website' no debería ser nulo");
+
+
 
         }catch (Exception e){
             System.out.println();

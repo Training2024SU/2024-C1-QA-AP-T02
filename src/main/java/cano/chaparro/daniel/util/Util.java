@@ -5,6 +5,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Util {
     public static JSONObject jsonToObject(String jsonString){
         JSONObject jsonObject = new JSONObject();
@@ -25,6 +28,10 @@ public class Util {
         post.setTitle("sunt aut facere repellat provident occaecati excepturi optio reprehenderit");
 
         return post;
+    }
+    public static String formatDayMonthYear(Date date) {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+        return formatter.format(date);
     }
 
 }

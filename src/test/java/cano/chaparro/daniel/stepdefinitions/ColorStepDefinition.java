@@ -95,6 +95,9 @@ public class ColorStepDefinition {
             Assertions.assertEquals(colorcrete.getYear(), colorResponse.getYear());
             Assertions.assertEquals(colorcrete.getColor(), colorResponse.getColor());
             Assertions.assertEquals(colorcrete.getPantoneValue(), colorResponse.getPantoneValue());
+
+            System.out.println("Color actualizado: "+colorResponse);
+
         } catch (Exception e) {
             System.out.println();
             System.out.println(e.getMessage());

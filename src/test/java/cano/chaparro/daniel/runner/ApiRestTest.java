@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features= {"src/test/resources/features" },
         glue="cano/chaparro/daniel/stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@testcolorDetele",
+        tags = "@testcolor",
         publish = true
 )
 public class ApiRestTest {
