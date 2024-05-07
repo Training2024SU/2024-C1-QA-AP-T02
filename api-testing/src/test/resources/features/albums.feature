@@ -1,4 +1,4 @@
-@Albums
+@Albums @jsonPlaceholder
 Feature: Albums
 
   Background: User's albums

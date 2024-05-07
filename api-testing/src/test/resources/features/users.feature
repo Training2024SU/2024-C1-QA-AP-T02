@@ -1,4 +1,4 @@
-@Users
+@Users @ReqRes
 Feature: Users
 
   Scenario: Obtain user profile info

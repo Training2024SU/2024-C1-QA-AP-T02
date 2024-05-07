@@ -38,11 +38,8 @@ public class AlbumsSteps {
 
     @Given("A list of albums from a user")
     public void aListOfAlbumsFromAUser() {
-        RestAssured.baseURI = PLACEHOLDER_BASE;
-        RestAssured.basePath = "";
         user = UserFactory.getRegisteredUser();
         albums = fetchUserAlbums(user);
-        System.out.println(albums);
     }
 
     @When("the user deletes one of the albums")

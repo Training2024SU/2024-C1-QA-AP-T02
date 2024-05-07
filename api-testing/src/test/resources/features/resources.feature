@@ -1,4 +1,4 @@
-@Resources
+@Resources @ReqRes
 Feature: Resources management via REST API
   As an integration system I
   WANT to manage the information about the resources in the service

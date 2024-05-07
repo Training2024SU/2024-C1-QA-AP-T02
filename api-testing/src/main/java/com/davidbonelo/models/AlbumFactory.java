@@ -13,7 +13,6 @@ public class AlbumFactory {
         List<Album> albums = new ArrayList<>();
         List<LinkedHashMap<String, Object>> albumsJsonList = JsonPath.from(jsonString).getList("");
         for (LinkedHashMap<String, Object> albumJson : albumsJsonList) {
-            System.out.println(albumJson);
             albums.add(buildAlbumFromJson(albumJson));
         }
         return albums;
