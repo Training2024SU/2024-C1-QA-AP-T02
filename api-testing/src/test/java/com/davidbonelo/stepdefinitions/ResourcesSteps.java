@@ -1,5 +1,6 @@
 package com.davidbonelo.stepdefinitions;
 
+import com.davidbonelo.ApiEndpoints;
 import com.davidbonelo.models.Resource;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -26,7 +27,6 @@ public class ResourcesSteps extends ApiEndpoints {
     public void theSystemRequestsTheResourceSInfo() {
         RequestSpecification request = given();
         response = request.get(RESOURCES_ENDPOINT + "/" + resource.getId());
-
     }
 
     @Then("it should receive a success response")
@@ -42,13 +42,5 @@ public class ResourcesSteps extends ApiEndpoints {
                 .body("data.year", notNullValue(Integer.class))
                 .body("data.color", notNullValue())
                 .body("data.pantone_value", notNullValue());
-        /*"data": {
-    "id": 10,
-    "name": "mimosa",
-    "year": 2009,
-    "color": "#F0C05A",
-    "pantone_value": "14-0848"
-  },*/
-
     }
 }

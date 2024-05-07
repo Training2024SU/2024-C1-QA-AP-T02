@@ -8,7 +8,7 @@ Rest API testing workshop solution using rest assured in BDD style running with 
     - It's possible to filter by tags using the annotations
 - Run a specific feature or scenario from [features/](src/test/resources/features)
 
-to desable requests and responses login, delete line 18 from this file: [RestSetup](
+to disable requests and responses login, delete line 18 from this file: [RestSetup](
 src/test/java/com/davidbonelo/stepdefinitions/RestSetup.java)
 
 ## How to generate reports

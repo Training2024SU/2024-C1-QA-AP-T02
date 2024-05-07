@@ -10,8 +10,8 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-import static com.davidbonelo.stepdefinitions.ApiEndpoints.LOGIN_ENDPOINT;
-import static com.davidbonelo.stepdefinitions.ApiEndpoints.USERS_ENDPOINT;
+import static com.davidbonelo.ApiEndpoints.LOGIN_ENDPOINT;
+import static com.davidbonelo.ApiEndpoints.USERS_ENDPOINT;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 

@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+    implementation 'io.rest-assured:rest-assured:5.4.0'
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation platform("io.cucumber:cucumber-bom:7.17.0")

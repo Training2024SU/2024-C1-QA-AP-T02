@@ -53,6 +53,10 @@ public class User {
         this.lastName = lastName;
     }
 
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
     public String getAvatarLink() {
         return avatarLink;
     }
@@ -67,5 +71,10 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", email='" + email + '\'' + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", avatarLink='" + avatarLink + '\'' + ", password='" + password + '\'' + '}';
     }
 }
