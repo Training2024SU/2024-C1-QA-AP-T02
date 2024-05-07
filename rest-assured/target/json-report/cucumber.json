@@ -1,0 +1,699 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 889001000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is currently on the reqres.in platform.",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.CreateUserStepDefinition.theUserIsCurrentlyOnTheReqresInPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:25.765Z",
+        "line": 18,
+        "name": "Successful Account Creation using POST",
+        "description": "",
+        "id": "account-creation-on-reqres.in-platform;successful-account-creation-using-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2187143900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user correctly enters their details",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.CreateUserStepDefinition.theUserCorrectlyEntersTheirDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "johan@gmail.com",
+                  "johan"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 820000500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "they should be able to view their information along with a generated ID",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.CreateUserStepDefinition.theyShouldBeAbleToViewTheirInformationAlongWithAGeneratedID()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14001600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the response should have a valid status code of 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is currently on the reqres.in platform.",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.CreateUserStepDefinition.theUserIsCurrentlyOnTheReqresInPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:29.705Z",
+        "line": 19,
+        "name": "Successful Account Creation using POST",
+        "description": "",
+        "id": "account-creation-on-reqres.in-platform;successful-account-creation-using-post;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 494006800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user correctly enters their details",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.CreateUserStepDefinition.theUserCorrectlyEntersTheirDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "jorge@gmail.com",
+                  "jorge"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35999600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "they should be able to view their information along with a generated ID",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.CreateUserStepDefinition.theyShouldBeAbleToViewTheirInformationAlongWithAGeneratedID()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the response should have a valid status code of 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Account Creation on reqres.in Platform",
+    "description": "  As an user of reqres.in,\n  I want to create a new account\n  So that I can access to the platform.",
+    "id": "account-creation-on-reqres.in-platform",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/create_user.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is registered on the jsonplaceholder platform",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.DeletePostStepDefinition.theUserIsRegisteredOnTheJsonplaceholderPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:30.262Z",
+        "line": 15,
+        "name": "Delete Post Successfully using DELETE",
+        "description": "",
+        "id": "delete-post-on-jsonplaceholder.typicode.com-platform;delete-post-successfully-using-delete;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 391119100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user deletes its post with id 1 successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 34
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.DeletePostStepDefinition.theUserDeletesItsPostWithIdSuccessfully(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response should have a valid status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is registered on the jsonplaceholder platform",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.DeletePostStepDefinition.theUserIsRegisteredOnTheJsonplaceholderPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:30.660Z",
+        "line": 16,
+        "name": "Delete Post Successfully using DELETE",
+        "description": "",
+        "id": "delete-post-on-jsonplaceholder.typicode.com-platform;delete-post-successfully-using-delete;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 270000500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user deletes its post with id 2 successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 34
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.DeletePostStepDefinition.theUserDeletesItsPostWithIdSuccessfully(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response should have a valid status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is registered on the jsonplaceholder platform",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.DeletePostStepDefinition.theUserIsRegisteredOnTheJsonplaceholderPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:30.937Z",
+        "line": 17,
+        "name": "Delete Post Successfully using DELETE",
+        "description": "",
+        "id": "delete-post-on-jsonplaceholder.typicode.com-platform;delete-post-successfully-using-delete;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 357999500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user deletes its post with id 3 successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 34
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.DeletePostStepDefinition.theUserDeletesItsPostWithIdSuccessfully(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response should have a valid status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Delete Post on jsonplaceholder.typicode.com platform",
+    "description": "  As a user of the platform\n  I want to delete my posts\n  So that I can clean my history",
+    "id": "delete-post-on-jsonplaceholder.typicode.com-platform",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/delete_post.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is registered on the reqres.in platform",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theUserIsRegisteredOnTheReqresInPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:31.308Z",
+        "line": 18,
+        "name": "Successfully Search for User Information using GET",
+        "description": "",
+        "id": "search-user-information-on-reqres.in-platform;successfully-search-for-user-information-using-get;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 262000900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user enters their registered ID 2 in the database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 36
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theUserEntersTheirRegisteredIDInTheDatabase(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51999400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "they should be able to view their information",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theyShouldBeAbleToViewTheirInformation(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "email",
+                  "firstName",
+                  "lastName"
+                ]
+              },
+              {
+                "cells": [
+                  "2",
+                  "janet.weaver@reqres.in",
+                  "Janet",
+                  "Weaver"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2999600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the response should have a valid status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is registered on the reqres.in platform",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theUserIsRegisteredOnTheReqresInPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:31.632Z",
+        "line": 19,
+        "name": "Successfully Search for User Information using GET",
+        "description": "",
+        "id": "search-user-information-on-reqres.in-platform;successfully-search-for-user-information-using-get;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 220003800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user enters their registered ID 4 in the database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 36
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theUserEntersTheirRegisteredIDInTheDatabase(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75997700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "they should be able to view their information",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theyShouldBeAbleToViewTheirInformation(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "email",
+                  "firstName",
+                  "lastName"
+                ]
+              },
+              {
+                "cells": [
+                  "4",
+                  "eve.holt@reqres.in",
+                  "Eve",
+                  "Holt"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1001500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the response should have a valid status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Search User Information on reqres.in Platform",
+    "description": "  As a registered user on reqres.in,\n  I want to search for my information\n  So that I can view all relevant details",
+    "id": "search-user-information-on-reqres.in-platform",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/search_single_user.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is registered on the jsonplaceholder platform",
+            "match": {
+              "location": "co.com.sofka.stepdefinitions.DeletePostStepDefinition.theUserIsRegisteredOnTheJsonplaceholderPlatform()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-07T03:07:31.934Z",
+        "line": 17,
+        "name": "Update Post Successfully using PUT",
+        "description": "",
+        "id": "update-post-on-jsonplaceholder.typicode.com-platform;update-post-successfully-using-put;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 306480000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user updates the post with id 1 with the following data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 34
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.UpdatePostStepDefinition.theUserUpdatesThePostWithIdWithTheFollowingData(java.lang.Integer,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "title",
+                  "body",
+                  "userId"
+                ]
+              },
+              {
+                "cells": [
+                  "1",
+                  "updated title",
+                  "updated body",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the response should have a valid status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "co.com.sofka.stepdefinitions.SearchStepDefinition.theResponseShouldHaveAValidStatusCodeOf(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Update Post on jsonplaceholder.typicode.com platform",
+    "description": "  As a user of the platform\n  I want to update my posts\n  So that I can modify my posts",
+    "id": "update-post-on-jsonplaceholder.typicode.com-platform",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/update_post.feature",
+    "tags": []
+  }
+]

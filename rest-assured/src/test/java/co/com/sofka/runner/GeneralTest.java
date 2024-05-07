@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "co.com.sofka.stepdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        plugin = { "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class GeneralTest {
 }
