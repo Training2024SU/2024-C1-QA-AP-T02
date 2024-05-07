@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RunRestTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RunRestTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.davidbonelo.runners.html">com.davidbonelo.runners</a> &gt; RunRestTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.634s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Albums - Add a photo to a album</td>
+<td class="success">0.806s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Albums - Create a new empty album</td>
+<td class="success">1.585s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Albums - Delete a photo</td>
+<td class="success">0.770s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Albums - Delete a user album</td>
+<td class="success">0.748s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Resources management via REST API - Obtain resource info - Examples - Example #1.1</td>
+<td class="success">0.361s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Resources management via REST API - Obtain resource info - Examples - Example #1.2</td>
+<td class="success">0.368s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Users - Obtain user profile info</td>
+<td class="success">0.996s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@Albums @jsonPlaceholder
+Scenario: Create a new empty album                ?[90m# features/albums.feature:7?[0m
+Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/users/3/albums
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:12 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1715027662
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=43200
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/&quot;3cb-v7V2b5Azxq2xyLQ66YDBILHcBOU&quot;
+Via: 1.1 vegur
+CF-Cache-Status: HIT
+Age: 6667
+Server: cloudflare
+CF-RAY: 8802e6fca88f09f2-MIA
+Content-Encoding: gzip
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+[
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 21,
+        &quot;title&quot;: &quot;repudiandae voluptatem optio est consequatur rem in temporibus et&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 22,
+        &quot;title&quot;: &quot;et rem non provident vel ut&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;incidunt quisquam hic adipisci sequi&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 24,
+        &quot;title&quot;: &quot;dolores ut et facere placeat&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;vero maxime id possimus sunt neque et consequatur&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 26,
+        &quot;title&quot;: &quot;quibusdam saepe ipsa vel harum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 27,
+        &quot;title&quot;: &quot;id non nostrum expedita&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 28,
+        &quot;title&quot;: &quot;omnis neque exercitationem sed dolor atque maxime aut cum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 29,
+        &quot;title&quot;: &quot;inventore ut quasi magnam itaque est fugit&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 30,
+        &quot;title&quot;: &quot;tempora assumenda et similique odit distinctio error&quot;
+    }
+]
+  ?[32mGiven ?[0m?[32mA list of albums from a user?[0m              ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.aListOfAlbumsFromAUser()?[0m
+Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/albums
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;title&quot;: &quot;Bea Lowe&quot;,
+    &quot;userId&quot;: 3
+}
+HTTP/1.1 201 Created
+Date: Tue, 07 May 2024 17:24:13 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 53
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715102653&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=st1HAblAaBf0d1SwauqmpU0fCxsPY5qcyhyGL8GJeF8%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715102653&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=st1HAblAaBf0d1SwauqmpU0fCxsPY5qcyhyGL8GJeF8%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1715102713
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: https://jsonplaceholder.typicode.com/albums/101
+X-Content-Type-Options: nosniff
+Etag: W/&quot;35-Yrp4P2a8bLJ2ZZOySBGjW2+y08U&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8802e6ffaae3a55e-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+{
+    &quot;title&quot;: &quot;Bea Lowe&quot;,
+    &quot;userId&quot;: 3,
+    &quot;id&quot;: 101
+}
+  ?[32mWhen ?[0m?[32mthe user creates a new album?[0m               ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.theUserCreatesANewAlbum()?[0m
+  ?[32mThen ?[0m?[32mhe should get a successful response?[0m        ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.heShouldGetASuccessfulResponse()?[0m
+  ?[32mAnd ?[0m?[32mhe should get the id assigned to that album?[0m ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.heShouldGetTheIdAssignedToThatAlbum()?[0m
+
+@Albums @jsonPlaceholder
+Scenario: Delete a user album                         ?[90m# features/albums.feature:12?[0m
+Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/users/3/albums
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:14 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1715027662
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=43200
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/&quot;3cb-v7V2b5Azxq2xyLQ66YDBILHcBOU&quot;
+Via: 1.1 vegur
+CF-Cache-Status: HIT
+Age: 6669
+Server: cloudflare
+CF-RAY: 8802e7037ca59aef-MIA
+Content-Encoding: gzip
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+[
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 21,
+        &quot;title&quot;: &quot;repudiandae voluptatem optio est consequatur rem in temporibus et&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 22,
+        &quot;title&quot;: &quot;et rem non provident vel ut&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;incidunt quisquam hic adipisci sequi&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 24,
+        &quot;title&quot;: &quot;dolores ut et facere placeat&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;vero maxime id possimus sunt neque et consequatur&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 26,
+        &quot;title&quot;: &quot;quibusdam saepe ipsa vel harum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 27,
+        &quot;title&quot;: &quot;id non nostrum expedita&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 28,
+        &quot;title&quot;: &quot;omnis neque exercitationem sed dolor atque maxime aut cum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 29,
+        &quot;title&quot;: &quot;inventore ut quasi magnam itaque est fugit&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 30,
+        &quot;title&quot;: &quot;tempora assumenda et similique odit distinctio error&quot;
+    }
+]
+  ?[32mGiven ?[0m?[32mA list of albums from a user?[0m                  ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.aListOfAlbumsFromAUser()?[0m
+Request method:	DELETE
+Request URI:	https://jsonplaceholder.typicode.com/albums/21
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715102654&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=IwC4U4aiSckQszI%2B4h2J532DLPItt27DNoZQx7qwc%2BM%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715102654&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=IwC4U4aiSckQszI%2B4h2J532DLPItt27DNoZQx7qwc%2BM%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 998
+X-Ratelimit-Reset: 1715102713
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8802e705883ba4cd-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+{
+    
+}
+  ?[32mWhen ?[0m?[32mthe user deletes one of the albums?[0m             ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.theUserDeletesOneOfTheAlbums()?[0m
+  ?[32mThen ?[0m?[32mhe should get a successful response?[0m            ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.heShouldGetASuccessfulResponse()?[0m
+  ?[32mAnd ?[0m?[32mhe shouldn't see that album anymore in his list?[0m ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.heShouldnTSeeThatAlbumAnymoreInHisList()?[0m
+
+@Albums @jsonPlaceholder
+Scenario: Add a photo to a album                     ?[90m# features/albums.feature:17?[0m
+Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/users/3/albums
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:14 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1715027662
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=43200
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/&quot;3cb-v7V2b5Azxq2xyLQ66YDBILHcBOU&quot;
+Via: 1.1 vegur
+CF-Cache-Status: HIT
+Age: 6669
+Server: cloudflare
+CF-RAY: 8802e7082b0e09fe-MIA
+Content-Encoding: gzip
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+[
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 21,
+        &quot;title&quot;: &quot;repudiandae voluptatem optio est consequatur rem in temporibus et&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 22,
+        &quot;title&quot;: &quot;et rem non provident vel ut&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;incidunt quisquam hic adipisci sequi&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 24,
+        &quot;title&quot;: &quot;dolores ut et facere placeat&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;vero maxime id possimus sunt neque et consequatur&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 26,
+        &quot;title&quot;: &quot;quibusdam saepe ipsa vel harum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 27,
+        &quot;title&quot;: &quot;id non nostrum expedita&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 28,
+        &quot;title&quot;: &quot;omnis neque exercitationem sed dolor atque maxime aut cum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 29,
+        &quot;title&quot;: &quot;inventore ut quasi magnam itaque est fugit&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 30,
+        &quot;title&quot;: &quot;tempora assumenda et similique odit distinctio error&quot;
+    }
+]
+  ?[32mGiven ?[0m?[32mA list of albums from a user?[0m                 ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.aListOfAlbumsFromAUser()?[0m
+Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/photos
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;albumId&quot;: 27,
+    &quot;title&quot;: &quot;Stan Dup&quot;,
+    &quot;url&quot;: &quot;https://www.xn--mara teresa-meraz-fvb.info/est/deseruntin#incidunt&quot;,
+    &quot;thumbnailUrl&quot;: &quot;https://www.jorge luis-barrios.org/recusandae/atqueeaque#labore&quot;
+}
+HTTP/1.1 201 Created
+Date: Tue, 07 May 2024 17:24:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 220
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715102655&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=ghzzkmwIwHoDeLGEsi1owaFl%2FD6AiSSRxN0ozJmbM2g%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715102655&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=ghzzkmwIwHoDeLGEsi1owaFl%2FD6AiSSRxN0ozJmbM2g%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 997
+X-Ratelimit-Reset: 1715102713
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: https://jsonplaceholder.typicode.com/photos/5001
+X-Content-Type-Options: nosniff
+Etag: W/&quot;dc-b0MGqTz97/Bq1PKZX2b9YUsJ0xk&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8802e70a69104c1f-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+{
+    &quot;albumId&quot;: 27,
+    &quot;title&quot;: &quot;Stan Dup&quot;,
+    &quot;url&quot;: &quot;https://www.xn--mara teresa-meraz-fvb.info/est/deseruntin#incidunt&quot;,
+    &quot;thumbnailUrl&quot;: &quot;https://www.jorge luis-barrios.org/recusandae/atqueeaque#labore&quot;,
+    &quot;id&quot;: 5001
+}
+  ?[32mWhen ?[0m?[32mthe user adds a photo to one album?[0m            ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.theUserAddsAPhotoToOneAlbum()?[0m
+  ?[32mThen ?[0m?[32mhe should get a successful response?[0m           ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.heShouldGetASuccessfulResponse()?[0m
+  ?[32mAnd ?[0m?[32mhe should get the id assigned to the new photo?[0m ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.heShouldGetTheIdAssignedToTheNewPhoto()?[0m
+
+@Albums @jsonPlaceholder
+Scenario: Delete a photo                       ?[90m# features/albums.feature:22?[0m
+Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/users/3/albums
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715027644&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=zxk1zvFeQmC6Sm5FSzKVgG9mTPtxokfGjJIVIydqx6c%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1715027662
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=43200
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/&quot;3cb-v7V2b5Azxq2xyLQ66YDBILHcBOU&quot;
+Via: 1.1 vegur
+CF-Cache-Status: HIT
+Age: 6670
+Server: cloudflare
+CF-RAY: 8802e70d2fa221b5-MIA
+Content-Encoding: gzip
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+[
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 21,
+        &quot;title&quot;: &quot;repudiandae voluptatem optio est consequatur rem in temporibus et&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 22,
+        &quot;title&quot;: &quot;et rem non provident vel ut&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;incidunt quisquam hic adipisci sequi&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 24,
+        &quot;title&quot;: &quot;dolores ut et facere placeat&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;vero maxime id possimus sunt neque et consequatur&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 26,
+        &quot;title&quot;: &quot;quibusdam saepe ipsa vel harum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 27,
+        &quot;title&quot;: &quot;id non nostrum expedita&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 28,
+        &quot;title&quot;: &quot;omnis neque exercitationem sed dolor atque maxime aut cum&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 29,
+        &quot;title&quot;: &quot;inventore ut quasi magnam itaque est fugit&quot;
+    },
+    {
+        &quot;userId&quot;: 3,
+        &quot;id&quot;: 30,
+        &quot;title&quot;: &quot;tempora assumenda et similique odit distinctio error&quot;
+    }
+]
+  ?[32mGiven ?[0m?[32mA list of albums from a user?[0m           ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.aListOfAlbumsFromAUser()?[0m
+Request method:	DELETE
+Request URI:	https://jsonplaceholder.typicode.com/photos/4000
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:16 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715102655&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=ghzzkmwIwHoDeLGEsi1owaFl%2FD6AiSSRxN0ozJmbM2g%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715102655&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=ghzzkmwIwHoDeLGEsi1owaFl%2FD6AiSSRxN0ozJmbM2g%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 996
+X-Ratelimit-Reset: 1715102713
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8802e70f4d096dd3-MIA
+alt-svc: h3=&quot;:443&quot;; ma=86400
+
+{
+    
+}
+  ?[32mWhen ?[0m?[32mthe user removes a photo from one album?[0m ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.theUserRemovesAPhotoFromOneAlbum()?[0m
+  ?[32mThen ?[0m?[32mhe should get a successful response?[0m     ?[90m# com.davidbonelo.stepdefinitions.AlbumsSteps.heShouldGetASuccessfulResponse()?[0m
+
+@Resources @ReqRes
+Scenario Outline: Obtain resource info                                           ?[90m# features/resources.feature:14?[0m
+  ?[32mGiven ?[0m?[32mthe resource with id ?[0m?[32m?[1m10?[0m                                                  ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.theResourceWithId(int)?[0m
+Request method:	GET
+Request URI:	https://reqres.in/api/unknown/10
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:16 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715015306&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=emF%2FmGuFvTcGt0Ha6jSEv3TAQ2ECYo%2FjSGTsGmvK%2Fvg%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715015306&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=emF%2FmGuFvTcGt0Ha6jSEv3TAQ2ECYo%2FjSGTsGmvK%2Fvg%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;e3-whd2iOiDyWqTXBay90+ZeEzLubc&quot;
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 3556
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8802e7121c24a52e-MIA
+Content-Encoding: gzip
+
+{
+    &quot;data&quot;: {
+        &quot;id&quot;: 10,
+        &quot;name&quot;: &quot;mimosa&quot;,
+        &quot;year&quot;: 2009,
+        &quot;color&quot;: &quot;#F0C05A&quot;,
+        &quot;pantone_value&quot;: &quot;14-0848&quot;
+    },
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+        &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+    }
+}
+  ?[32mWhen ?[0m?[32mthe system requests the resource's info?[0m                                   ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.theSystemRequestsTheResourceSInfo()?[0m
+  ?[32mThen ?[0m?[32mit should receive a success response?[0m                                      ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.itShouldReceiveASuccessResponse()?[0m
+  ?[32mAnd ?[0m?[32mit should obtain the complete resource's info with id ?[0m?[32m?[1m10?[0m?[32m and name ?[0m?[32m?[1m&quot;mimosa&quot;?[0m ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.itShouldObtainTheCompleteResourceSInfoWithIdIdAndName(int,java.lang.String)?[0m
+
+@Resources @ReqRes
+Scenario Outline: Obtain resource info                                                ?[90m# features/resources.feature:15?[0m
+  ?[32mGiven ?[0m?[32mthe resource with id ?[0m?[32m?[1m2?[0m                                                        ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.theResourceWithId(int)?[0m
+Request method:	GET
+Request URI:	https://reqres.in/api/unknown/2
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:16 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1713365488&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=6zDuo5Y7wMrjP14zW4cZddJuHv9%2BuA76%2BEJtgAA7oII%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713365488&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=6zDuo5Y7wMrjP14zW4cZddJuHv9%2BuA76%2BEJtgAA7oII%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;e8-ov4wWh4/OY1IMQMqWgskYtOFnVs&quot;
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 4904
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8802e7145d08749c-MIA
+Content-Encoding: gzip
+
+{
+    &quot;data&quot;: {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;fuchsia rose&quot;,
+        &quot;year&quot;: 2001,
+        &quot;color&quot;: &quot;#C74375&quot;,
+        &quot;pantone_value&quot;: &quot;17-2031&quot;
+    },
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+        &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+    }
+}
+  ?[32mWhen ?[0m?[32mthe system requests the resource's info?[0m                                        ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.theSystemRequestsTheResourceSInfo()?[0m
+  ?[32mThen ?[0m?[32mit should receive a success response?[0m                                           ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.itShouldReceiveASuccessResponse()?[0m
+  ?[32mAnd ?[0m?[32mit should obtain the complete resource's info with id ?[0m?[32m?[1m2?[0m?[32m and name ?[0m?[32m?[1m&quot;fuchsia rose&quot;?[0m ?[90m# com.davidbonelo.stepdefinitions.ResourcesSteps.itShouldObtainTheCompleteResourceSInfoWithIdIdAndName(int,java.lang.String)?[0m
+
+@Users @ReqRes
+Scenario: Obtain user profile info           ?[90m# features/users.feature:4?[0m
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+    &quot;password&quot;: &quot;ultraSecretPassword&quot;
+}
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1715102657&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=bYurlto70fvSgjVpfTSrEERDxZDZ5rR5%2B%2FHtMWNcw7M%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715102657&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=bYurlto70fvSgjVpfTSrEERDxZDZ5rR5%2B%2FHtMWNcw7M%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;1d-bko8mAcP4Yen4efBafrwR7JdWqw&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8802e7169b1267ec-MIA
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X3&quot;
+}
+  ?[32mGiven ?[0m?[32mA user is logged in?[0m                  ?[90m# com.davidbonelo.stepdefinitions.UserSteps.aUserIsLoggedIn()?[0m
+Request method:	GET
+Request URI:	https://reqres.in/api/users/3
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer QpwL5tke4Pnpja7X3
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 07 May 2024 17:24:17 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1714656120&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=PIYChPGyGX3d4nCXZ6pzRD8hMlANUlfIthkAAYfWg4k%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1714656120&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=PIYChPGyGX3d4nCXZ6pzRD8hMlANUlfIthkAAYfWg4k%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;112-EeInfgHWtnxhYRnwgZUB667e024&quot;
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 4438
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8802e71aab60daa9-MIA
+Content-Encoding: gzip
+
+{
+    &quot;data&quot;: {
+        &quot;id&quot;: 3,
+        &quot;email&quot;: &quot;emma.wong@reqres.in&quot;,
+        &quot;first_name&quot;: &quot;Emma&quot;,
+        &quot;last_name&quot;: &quot;Wong&quot;,
+        &quot;avatar&quot;: &quot;https://reqres.in/img/faces/3-image.jpg&quot;
+    },
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+        &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+    }
+}
+  ?[32mWhen ?[0m?[32mhe requests its profile data?[0m          ?[90m# com.davidbonelo.stepdefinitions.UserSteps.heRequestsItsProfileData()?[0m
+  ?[32mThen ?[0m?[32mhe should see his correct information?[0m ?[90m# com.davidbonelo.stepdefinitions.UserSteps.heShouldSeeHisCorrectInformation()?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at May 7, 2024, 12:24:17 PM</p>
+</div>
+</div>
+</body>
+</html>
