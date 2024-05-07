@@ -18,15 +18,20 @@ public class UsersStepDefinition {
     public void queElAdministradorTieneAccesoALaAPIREST() {
         System.out.println("Acceso concedido");
     }
-    @When("se busca al usuario con Id {int}")
+    @When("hace una solicitud GET para buscar el usuario con {int}")
     public void haceUnaSolicitudGetAlUsuarioConID(Integer userId) {
+        System.out.println("Se realiza solicitud get al API users");
         userGetRequest = new UserGetRequest(userId);
         userGetRequest.setGetRequest();
     }
+
+
+
     @Then("la respuesta debería tener el código de estado {int}")
     public void laRespuestaDeberíaTenerElCódigoDeEstado(Integer response) {
             try{
-                Assertions.assertEquals(response,userGetRequest.getStatusCode());
+                System.out.println("Se valida código de respuesta 200");
+                Assertions.assertEquals(response,userGetRequest.getStatusCode(),"Se valida código de respuesta 200");
             }catch (Exception e){
                 System.out.println();
                 System.out.println(e.getMessage());
@@ -42,9 +47,11 @@ public class UsersStepDefinition {
             // parsear objeto Json al tipo usuario
                 User user = UserParser.toUser(userObject);
 
+            System.out.println("Se valida respuesta para el usuario con Id: "+userId);
             // validar que el body de la respuesta corresponda al usuario indicado
             Assertions.assertEquals(userId,user.getId());
 
+            System.out.println("Se valida que ningún campo del objeto user sea null");
             // Validar que que ninguno de los campos del usuario sea null
             Assertions.assertNotNull(user.getId(), "El campo 'id' no debería ser nulo");
             Assertions.assertNotNull(user.getName(), "El campo 'name' no debería ser nulo");

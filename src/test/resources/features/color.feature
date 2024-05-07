@@ -9,11 +9,14 @@ Feature: Personalizar color del perfil
     Given que el usuario esta autenticado en el aplicativo
 
   @testcolor
-  Scenario: Actualizar un nuevo color exitosamente
-    When el usuario actualiza un color con nombre "rojo", año 2003, color "#C74375" y valor Pantone "17-2031"
-    Then debería ver un mensaje de confirmación de que el color fue actualizado correctamente
+  Scenario: Actualizar un nuevo color exitosamente mediante peticion put
+    When el usuario realiza una solicitud PUT para actualizar el color con nombre "rojo"
+    And actualiza los campos a año 2003, color "#C74375" y valor Pantone "17-2031"
+    Then debería tener la respuesta el código de estado 200
+    And se debería mostrar un mensaje con la informacion del color correctamente actualizada
 
-  Scenario: Actualizar un color existente exitosamente
-    Given que el usuasrio ha agregado un color con nombre "rojo"
-    When el usuario actualiza el color con nombre "rojo" cambiando su año a 2020 y su color a "#C74375"
-    Then debería ver un mensaje de confirmación con la informacion actualizada del color
+  @testcolorDetele
+  Scenario: Eliminar un color exitosamente mediante una solicitud DELETE
+    When el usuario realiza una solicitud DELETE para eliminar el color con ID 2
+    Then la respuesta debería tener un codigo de estado 204
+    And el cuerpo de la respuesta debería estar vacío

@@ -7,9 +7,8 @@ public class Color {
     private String color;
     private String pantoneValue;
 
-    public Color(int id, String name, int year, String color, String pantoneValue) {
+    public Color(int id, int year, String color, String pantoneValue) {
         this.id = id;
-        this.name = name;
         this.year = year;
         this.color = color;
         this.pantoneValue = pantoneValue;

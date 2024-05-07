@@ -6,6 +6,6 @@ public class PathsApis {
 
     public static final String PUT_COLOR = "https://reqres.in/api/color/";
 
-    public static final String GET_COLOR = "https://reqres.in/api/color/2";
+    public static final String DELETE_COLOR = "https://reqres.in/api/color/";
 
 }
