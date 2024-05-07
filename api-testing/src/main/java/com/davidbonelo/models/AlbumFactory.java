@@ -1,10 +1,12 @@
 package com.davidbonelo.models;
 
 import io.restassured.path.json.JsonPath;
+import net.datafaker.Faker;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 
 public class AlbumFactory {
     public static List<Album> getAlbumListFromResponse(String jsonString) {
@@ -24,5 +26,12 @@ public class AlbumFactory {
         Integer id = (Integer) albumJson.get("id");
         String title = (String) albumJson.get("title");
         return new Album(user, id, title);
+    }
+
+    public static Album createFakeAlbum(){
+        Faker faker = new Faker(new Locale("es"));
+        Album album = new Album();
+        album.setTitle(faker.funnyName().name());
+        return album;
     }
 }
