@@ -3,11 +3,11 @@ Feature:  Registro de usuario en Reqrest
   quiero poder registrarme en el sistema
   para acceder a funciones adicionales
 
-
+  @testcorrecto
   @registroexitoso
   Scenario: Registro exitoso de un nuevo usuario
     Given que el usuario ingresa sus datos correctamente
-    When el usuario llama el servicio para registrarse
+    When el usuario llama el servicio POST para registrarse
     Then el servicio deberia responder con un estado HTTP 200 OK
-    And deberia visualizar su id y token asignados
+    And deberia visualizar su id y token asignado
 

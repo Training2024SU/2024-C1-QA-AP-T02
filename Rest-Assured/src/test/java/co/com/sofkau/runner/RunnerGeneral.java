@@ -5,10 +5,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/feature/registro.feature",
+        features = "src/test/resources/feature",
         glue = "co.com.sofkau.stepdefinition",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@registroexitoso"
+        tags = "@testcorrecto"
 )
-public class RegistroTest {
+public class RunnerGeneral {
 }
