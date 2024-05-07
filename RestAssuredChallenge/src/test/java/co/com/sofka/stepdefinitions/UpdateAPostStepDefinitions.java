@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+import static co.com.sofka.Constants.CODE_TEST3_POSTS;
 import static co.com.sofka.Constants.POSTS_ENDPOINT;
 import static io.restassured.RestAssured.given;
 
@@ -37,5 +38,6 @@ public class UpdateAPostStepDefinitions extends CommonFunctions {
     @Then("should receive status code {int}")
     public void shouldReceiveStatusCode(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(CODE_TEST3_POSTS + response.statusCode() );
     }
 }

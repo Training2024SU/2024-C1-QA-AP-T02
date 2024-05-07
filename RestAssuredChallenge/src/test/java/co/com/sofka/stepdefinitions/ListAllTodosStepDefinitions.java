@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import static co.com.sofka.Constants.SIZE;
+import static co.com.sofka.Constants.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -33,9 +33,11 @@ public class ListAllTodosStepDefinitions extends CommonFunctions {
     @Then("the amount of todos should be {int}")
     public void theAmountOfTodosShouldBe(Integer todosAmount) {
         response.then().assertThat().body(SIZE,equalTo(todosAmount));
+        System.out.println(BODY_TEST1_TODOS + response.body().prettyPrint());
     }
     @Then("the status code would be {int}")
     public void theStatusCodeWouldBe(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(CODE_TEST1_TODOS + response.statusCode());
     }
 }

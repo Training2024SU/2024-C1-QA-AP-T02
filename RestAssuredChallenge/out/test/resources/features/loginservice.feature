@@ -6,12 +6,14 @@ Feature: login in the application
   Background:
     Given the user browses the web page "https://reqres.in/api"
 
+  @login
   @test1
   Scenario: login successful
     When uses the credentials "eve.holt@reqres.in" "cityslicka"
     Then the status code in the login should be 200
     And should get a token "QpwL5tke4Pnpja7X4"
 
+  @login
   @test2
   Scenario: login with invalid credentials
     When enter the credentials "ev.holt@reqres.in" "cityslicka"

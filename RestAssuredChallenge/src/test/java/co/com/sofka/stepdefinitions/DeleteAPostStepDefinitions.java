@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 
+import static co.com.sofka.Constants.CODE_TEST4_POSTS;
 import static io.restassured.RestAssured.given;
 
 public class DeleteAPostStepDefinitions extends CommonFunctions {
@@ -25,6 +26,8 @@ public class DeleteAPostStepDefinitions extends CommonFunctions {
     @Then("the status code should be {int}")
     public void theStatusCodeShouldBe(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(CODE_TEST4_POSTS + response.statusCode());
+        System.out.println("");
     }
 
 }

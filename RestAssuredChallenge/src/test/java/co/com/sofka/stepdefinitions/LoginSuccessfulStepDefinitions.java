@@ -8,8 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static co.com.sofka.Constants.LOGIN_ENDPOINT;
-import static co.com.sofka.Constants.POSTS_ENDPOINT;
+import static co.com.sofka.Constants.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -35,10 +34,12 @@ public class LoginSuccessfulStepDefinitions extends CommonFunctions {
     @Then("the status code in the login should be {int}")
     public void theStatusCodeInTheLoginShouldBe(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(CODE_TEST1_LOGIN + response.statusCode());
     }
 
     @Then("should get a token {string}")
     public void shouldGetAToken(String token) {
         response.then().assertThat().body("token", equalTo(token));
+        System.out.println(BODY_TEST1_LOGIN + response.body().prettyPrint());
     }
 }

@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static co.com.sofka.Constants.TODOS_ENDPOINT;
+import static co.com.sofka.Constants.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -30,10 +30,12 @@ public class CreateATodoStepDefinitions extends CommonFunctions {
     @Then("should has a status code {int}")
     public void shouldHasAStatusCode(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(CODE_TEST3_TODOS + response.statusCode());
     }
     @Then("in the title space should be {string}")
     public void inTheTitleSpaceShouldBe(String title) {
         response.then().assertThat().body("title", equalTo(title));
+        System.out.println(BODY_TEST3_TODOS + response.body().prettyPrint());
     }
 
 }

@@ -6,6 +6,7 @@ Feature: Handling posts services
   Background:
     Given the user is in the web page "https://jsonplaceholder.typicode.com"
 
+  @posts
   @test1
   Scenario: Create a new post successfully
     When types information for a new post "Testing" "Posts service testing"
@@ -13,6 +14,7 @@ Feature: Handling posts services
     Then should receive a response with status code 201
     And the title should be "Testing"
 
+  @posts
   @test2
   Scenario: get an existent post
     And has one posts id 5
@@ -20,6 +22,7 @@ Feature: Handling posts services
     Then should has for title "nesciunt quas odio"
     And should has status code 200
 
+  @posts
   @test3
   Scenario: update an existing post
     And with post id 2
@@ -27,6 +30,7 @@ Feature: Handling posts services
     And executes the request
     Then should receive status code 200
 
+  @posts
   @test4
   Scenario: delete a post
     And the post id to delete is 3

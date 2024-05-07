@@ -8,7 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static co.com.sofka.Constants.POSTS_ENDPOINT;
+import static co.com.sofka.Constants.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -38,10 +38,12 @@ public class CreatePostsStepDefinitions extends CommonFunctions {
     @Then("should receive a response with status code {int}")
     public void shouldReceiveAResponseWithStatusCode(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(BODY_TEST1_POSTS + response.body().prettyPrint());
     }
     @Then("the title should be {string}")
     public void theTitleShouldBe(String title) {
-        response.then().assertThat().body("title", equalTo(title));
+        response.then().assertThat().body(TITLE, equalTo(title));
+        System.out.println(CODE_TEST1_POSTS + response.statusCode());
     }
 
 

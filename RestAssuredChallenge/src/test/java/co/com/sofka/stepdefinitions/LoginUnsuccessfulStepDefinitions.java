@@ -6,13 +6,14 @@ import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static co.com.sofka.Constants.LOGIN_ENDPOINT;
+import static co.com.sofka.Constants.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class LoginUnsuccessfulStepDefinitions extends CommonFunctions {
     Response response;
     String requestBody;
+
     @When("enter the credentials {string} {string}")
     public void enterTheCredentials(String email, String password) {
         requestBody = requestBodyLogin(email, password);
@@ -22,13 +23,17 @@ public class LoginUnsuccessfulStepDefinitions extends CommonFunctions {
                 when().
                 post(LOGIN_ENDPOINT);
     }
+
     @Then("the status code shown should be {int}")
     public void theStatusCodeShownShouldBe(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(CODE_TEST2_LOGIN + response.statusCode());
     }
+
     @Then("should get a message {string}")
     public void shouldGetAMessage(String errorMessage) {
         response.then().assertThat().body("error", equalTo(errorMessage));
+        System.out.println(BODY_TEST2_LOGIN + response.body().prettyPrint());
     }
 
 }

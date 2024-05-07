@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 
-import static co.com.sofka.Constants.COMPLETED;
+import static co.com.sofka.Constants.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -28,9 +28,11 @@ public class CheckCompletedValueStepDefinitions extends CommonFunctions {
     @Then("the completed valued should be true")
     public void theCompletedValuedShouldBeTrue() {
         response.then().assertThat().body(COMPLETED, equalTo(true));
+        System.out.println( BODY_TEST2_TODOS +response.body().prettyPrint());
     }
     @Then("the status code shown would be {int}")
     public void theStatusCodeShownWouldBe(Integer statusCode) {
         response.then().assertThat().statusCode(statusCode);
+        System.out.println(CODE_TEST2_TODOS + response.statusCode());
     }
 }
