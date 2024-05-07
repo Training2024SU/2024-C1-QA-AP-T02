@@ -10,13 +10,13 @@ import java.util.List;
 import java.util.Map;
 
 public class UpdatePostStepDefinition extends Setup{
-    private PostModel postModel;
 
     @When("the user updates the post with id {int} with the following data")
     public void theUserUpdatesThePostWithIdWithTheFollowingData(Integer postId, DataTable dataTable) {
         String UPDATE_URL = "/posts/{id}";
+
         List<Map<String, String>> postData = dataTable.asMaps(String.class, String.class);
-        postModel = SetModelData.mapPostModelData(postData);
+        PostModel postModel = SetModelData.mapPostModelData(postData);
 
         Gson gson = new Gson();
         String json = gson.toJson(postModel);

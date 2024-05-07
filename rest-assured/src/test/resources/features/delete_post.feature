@@ -15,3 +15,4 @@ Feature: Delete Post on jsonplaceholder.typicode.com platform
       | 1  |
       | 2  |
       | 3  |
+      | 4  |

@@ -1,8 +1,8 @@
 package co.com.sofka.util;
 
 import co.com.sofka.model.PostModel;
-import co.com.sofka.model.UserGetModel;
-import co.com.sofka.model.UserPostModel;
+import co.com.sofka.model.reqress.UserGetModel;
+import co.com.sofka.model.reqress.UserPostModel;
 
 import java.util.List;
 import java.util.Map;

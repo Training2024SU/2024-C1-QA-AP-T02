@@ -1,6 +1,6 @@
 package co.com.sofka.stepdefinitions;
 
-import co.com.sofka.model.UserGetModel;
+import co.com.sofka.model.reqress.UserGetModel;
 import co.com.sofka.util.SetModelData;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;

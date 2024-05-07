@@ -13,5 +13,6 @@ Feature: Update Post on jsonplaceholder.typicode.com platform
       | <id> | <title> | <body> | <userId> |
     Then the response should have a valid status code of 200
     Examples:
-      | id | title         | body         | userId |
-      | 1  | updated title | updated body | 1      |
+      | id | title           | body           | userId |
+      | 1  | updated title   | updated body   | 1      |
+      | 2  | updated title 2 | updated body 2 | 1      |
