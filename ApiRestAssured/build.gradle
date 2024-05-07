@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'co.com.sofka'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.cucumber:cucumber-junit:6.11.0'
+    implementation 'io.cucumber:cucumber-java:6.11.0'
+    implementation 'log4j:log4j:1.2.17'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.hamcrest:hamcrest-all:1.3'
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.4.0'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+test {
+    useJUnitPlatform()
+}
+
+gradle.startParameter.continueOnFailure = true
