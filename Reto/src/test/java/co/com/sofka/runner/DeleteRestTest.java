@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/deletedeleterest.feature",
+        features = "src/test/resources/features/deleterest.feature",
         glue = "co.com.sofka.stepdefinition",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-
-        tags = "@Login"
+        publish = true,
+        tags = "@delete"
 )
-public class LogisRestTest {
+public class DeleteRestTest {
 }
