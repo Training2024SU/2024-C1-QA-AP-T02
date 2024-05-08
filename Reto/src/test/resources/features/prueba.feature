@@ -6,11 +6,12 @@ Feature: Ver un usuario en especifico
 
   @test1
   Scenario Outline: Obtener un usuario en especifico exitosamente
-    Given Se hace la solicitud de encontrar un usuario
-    When hace la peticion get al servicio con sus id <id>
+    Given Estando el usuario en la seccion de obtener un usuario
+    When Se hace la solicitud de encontrar un usuario
+    Then hace la peticion get al servicio con sus id 2
       | id   | email   | firstName   | lastName   |
       | <id> | <email> | <firstName> | <lastName> |
-    Then deberia obetner la informacion del usuario
-    Examples:
-      | id | email                  | firstName | lastName |
-      | 2  | janet.weaver@reqres.in | Janet     | Weaver   |
+    And deberia obetner la informacion del usuario
+   Examples:
+     | id | email                  | firstName | lastName |
+     | 2  | janet.weaver@reqres.in | Janet     | Weaver   |

@@ -18,23 +18,25 @@ public class PruebaStep {
     private Response response;
 
 
-    @Given("Se hace la solicitud de encontrar un usuario")
-    public void SeHaceLaSolicitudDeEncontrarUnUsuario() {
+    @Given("Estando el usuario en la seccion de obtener un usuario")
+    public void estandoElUsuarioEnLaSeccionDeObtenerUnUsuario() {
+
         RestAssured.baseURI = "https://reqres.in";
 
     }
 
-    @When("hace la peticion get al servicio con sus credenciales")
-    public void haceLaPeticionGetAlServicioConSusCredenciales() {
-        String GET_SINGLE_USER = "/api/users/2";
+    @When("Se hace la solicitud de encontrar un usuario")
+    public void seHaceLaSolicitudDeEncontrarUnUsuario() {
+        String GET_SINGLE_USER = "/api/users/{id}";
         response = given()
+                .pathParam("id", 2)
                 .when()
                 .get(GET_SINGLE_USER);
 
     }
 
-    @Then("deberia obetner la informacion del usuario")
-    public void deberiaObetnerLaInformacionDelUsuario(DataTable dataTable) {
+    @Then("hace la peticion get al servicio con sus id {int}")
+    public void haceLaPeticionGetAlServicioConSusId(Integer int1, io.cucumber.datatable.DataTable dataTable) {
 
         List<Map<String, String>> userData = dataTable.asMaps(String.class, String.class);
         Map<String, String> usuarioEsperado = userData.get(0);
@@ -43,5 +45,12 @@ public class PruebaStep {
         response.then().assertThat().body("data.first_name", equalTo("Janet"));
         response.then().assertThat().body("data.last_name", equalTo("Weaver"));
 
+
     }
+    @Then("deberia obetner la informacion del usuario")
+    public void deberiaObetnerLaInformacionDelUsuario(){
+
+    }
+
+
 }
